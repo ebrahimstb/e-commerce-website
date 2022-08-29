@@ -1,0 +1,322 @@
+body{
+    margin: 20px 130px;
+}
+header{
+    border-bottom: 1px solid black;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.infos{
+    width: max-content;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.logo{
+    color: black;
+    font-weight: 900;
+    font-size: 24px;
+}
+.infos ul{
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+.infos li{
+   color: hsl(220, 14%, 75%);
+   padding: 10px 10px;
+}
+.infos li:hover{
+   border-bottom: 1.5px solid orange;
+   transition: 0.5s ease-in-out;
+}
+
+.infos2{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    width: 120px;
+    margin-top: -20px;
+}
+.icn{
+    display: flex;
+    flex-direction: column;
+}
+
+.carted-num{
+    width: max-content;
+    height: max-content;
+    background-color: hsl(25, 100%, 94%);
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 7px;
+    font-weight: 700;
+    color: hsl(26, 94%, 51%);
+    font-size: 10px;
+    padding: 0px 3px;
+    display: block;
+}
+
+.icn i{
+}
+.icn a{
+    color: black;
+    font-style: normal;
+    text-decoration: none;
+}
+.icn-pic{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url(/images/image-avatar.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section{
+    padding-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+#image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 70vh;
+    max-width: 35vw;
+}
+.main-image{
+   width: 75%;
+   height: 90%;
+   align-self: center;
+   background-image: url(/images/image-product-1.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-position: center;
+   background-size: cover;
+   border-radius: 10px;
+}
+.sub-image{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.sub-image span{
+    border-radius: 10px;
+    margin: 15px 10px;
+    height: 73px;
+    width: 15.3%;
+    background-color: red;
+}
+.sub-image :nth-child(1){
+ background-image: url(/images/image-product-1-thumbnail.jpg);
+ background-repeat: no-repeat;
+ background-position: center;
+ background-position: center;
+ background-size: cover;
+ border: 2px solid orange;
+}
+.sub-image :nth-child(2){
+    background-image: url(/images/image-product-2-thumbnail.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: center;
+    background-size: cover;
+   }
+   .sub-image :nth-child(3){
+    background-image: url(/images/image-product-3-thumbnail.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: center;
+    background-size: cover;
+   }
+   .sub-image :nth-child(4){
+    background-image: url(/images/image-product-4-thumbnail.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: center;
+    background-size: cover;
+   }
+#content{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: left;
+    height: 70vh;
+    width: 32vw;
+    padding: 50px 0 0 0;
+}
+h5{
+    font-size: 15px;
+    font-weight: bolder;
+    color: hsl(26, 100%, 55%);
+}
+#content h1{
+    padding-top: -50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-weight: 600;
+}
+#content p{
+    padding-top: 15px;
+   font-size: 16px;
+   color: hsl(219, 9%, 45%);
+}
+.discount{
+    display: flex;
+    text-align: center;
+}
+
+.discount :first-child{
+    color: black;
+    font-weight: bolder;
+    font-size: 25px;
+    padding-right: 10px;
+}
+.fifty{
+    width: max-content;
+    height: max-content;
+    background-color: hsl(25, 100%, 94%);
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 7px;
+}
+
+.discount .fifty span{
+    font-weight: 700;
+    color: hsl(26, 94%, 51%);
+    font-size: 15px;
+    padding: 1px 5px;
+}
+.real-price{
+    font-weight: bold;
+    text-decoration: line-through;
+    color: hsl(220, 14%, 75%);
+}
+.clickable{
+    display: flex;
+    width: 280px;
+    justify-content: space-between;
+}
+.adding{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    width: 120px;
+    height: 40px;
+    border-radius: 7px;
+    background-color: hsl(233, 12%, 87%);
+}
+.adding a{
+    color: hsl(26, 100%, 47%);
+    text-decoration: none;
+}
+.adding a:hover{
+    color: hsl(219, 9%, 45%);
+}
+button{
+    background-color: hsl(26, 100%, 47%);
+    border-radius: 7px;
+    padding: 5px 30px;
+    border: none;
+    align-items: center;
+    color: white;
+}
+button a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+    align-self: center;
+    justify-content: center;
+    justify-self: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+ }
+
+
+ .afteradding1{
+    height: max-content;
+    padding: 10px;
+    width: max-content;
+    background:  hsl(223, 64%, 98%);
+    border-radius: 5px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 10px 20px hsl(220deg 14% 75%);
+    margin-top: -470px;
+    margin-left: 990px;
+    transform: translate(-50%, -55%) scale(1);
+    transition: 1s ease-out;
+    z-index: 3;
+ }
+ .afteradding{
+    height: max-content;
+    padding: 10px;
+    width: max-content;
+    background:  hsl(223, 64%, 98%);
+    border-radius: 5px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 10px 20px hsl(220deg 14% 75%);
+ }
+ #afteradding .cdd{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: black;
+    padding: 20px;
+ }
+
+ .afteradding_down{
+    display: flex;
+    padding: 20px;
+    border-top: 1px solid black;
+ }
+ .afteradding_pic{
+    height: 55px;
+    width: 55px;
+    background: url(/images/image-product-1-thumbnail.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+ }
+ .aut{
+    color: hsl(219, 9%, 45%);
+    font-size: 17px;
+    padding-left: 10px;
+ }
+ #afteradding button{
+    width: 260px;
+    height: 50px;
+    align-self: center;
+ }
+ .total{
+    color: black;
+    font-weight: 700;
+    font-size: 19px;
+    font-family: sans-serif;
+ }

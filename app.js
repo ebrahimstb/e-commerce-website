@@ -37,31 +37,32 @@ Minusing.addEventListener("click", () =>{
 //making the number show above the cart after clicking the addtocart button
 addToCartEl.addEventListener("click", (e) =>{
     e.preventDefault()
-
     cartNumEl.textContent = digit
+    
+})
 
-    const empty = document.createElement("span");
-    const text = document.createTextNode("The cart is empty");
-    empty.appendChild(text)
 
 //making the card visible after clicking the cart icon
-    biEl.addEventListener("click", (e) =>{
-        if (digit > 0) {
-    originalPriceEl.textContent = "$" + price
-    multEl.textContent = "x"
-    howManyEl.textContent = digit
-    totalEl.textContent =  "$" +125 * digit
-        } else {
-            afterAddingEl.appendChild(empty)
-        }
-        e.preventDefault()
-        if (afterAddingEl.className == "afteradding") {
-            afterAddingEl.className = "afteradding1";
-          } else {
-            afterAddingEl.className = "afteradding";
-          }
-    })
-    
+const empty = document.createElement("span");
+const text = document.createTextNode("The cart is empty");
+empty.appendChild(text)
+
+biEl.addEventListener("click", (e) =>{
+    e.preventDefault()
+
+    if (digit > 0) {
+        originalPriceEl.textContent = "$" + price
+        multEl.textContent = "x"
+        howManyEl.textContent = digit
+        totalEl.textContent =  "$" +125 * digit
+    } else {
+        afterAddingEl.appendChild(empty)
+    }
+    if (afterAddingEl.className == "afteradding") {
+        afterAddingEl.className = "afteradding1";
+      } else {
+        afterAddingEl.className = "afteradding";
+      }
 })
 
 

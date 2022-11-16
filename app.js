@@ -65,6 +65,12 @@ biEl.addEventListener("click", (e) =>{
       }
 })
 
+//NAVBAR IN AND OUT 
+hamburger = document.querySelector(".hamburger")
+hamburger.onclick = ()=>{
+    navbar = document.querySelector(".hide");
+    navbar.classList.toggle("active");
+}
 
 // element.classList.toggle("mystyle");
 

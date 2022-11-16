@@ -1,5 +1,6 @@
 body{
     margin: 20px 130px;
+    font-family: sans-serif;
 }
 header{
     border-bottom: 1px solid black;
@@ -86,11 +87,9 @@ section{
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
 }
 
 #image{
-    border: 1px solid greenyellow;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -151,7 +150,6 @@ section{
     background-size: cover;
    }
 #content{
-    border: 1px solid green;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -182,7 +180,6 @@ h5{
     flex-wrap: wrap;
     text-align: center;
     max-width: 150px;
-    border: 1px solid blue;
 }
 
 .discount :first-child{
@@ -240,6 +237,7 @@ button{
     border: none;
     align-items: center;
     color: white;
+    box-shadow: ;
 }
 button a{
     text-decoration: none;
@@ -328,81 +326,165 @@ button a{
     font-size: 19px;
     font-family: sans-serif;
  }
-
+.hamburger{
+    display: none;
+}
+li a{
+    text-decoration: none;
+    color: white;
+}
 
  @media only screen and (max-width: 480px) {
     body{
         width: 100%;
         height: 1;
+        margin: 10px 10px;
     }
-    header{
-        display: none;
+    nav{
+        max-width: 374px;
     }
-    section {
-        grid-template-columns: repeat(1, 1fr);
-        width: 400px;
-        max-height: max-content;
+    .hamburger{
+        display: block;
+        cursor: pointer;
+        align-self: center;
+    }
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background: black;
+        margin: 6px 0;
+    }
+    .logo{
+        font-size: 40px;
+        font-weight: 900;
+    }
+    .hide{
+        position: absolute;
+        top: 65px;
+        left: 0;
+        right: 20px;
+        width: 0vw;
+        height: 100vh;
+        background: white;
+        transition: 0.2s;
+        overflow: hidden;
+    }
+    .hide.active{
+        width: 70vw;
+    }
+    .hide ul{
+        display: block;
+        margin: 70px auto auto 0px;
+        width: fit-content;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .hide.active ul {
+        opacity: 1;
+    }
+    .hide ul li a{
+        margin-bottom: 10px;
+        color: black;
+        font-size: larger;
+    }
+    .icn-pic{
+        height: 25px;
+        width: 25px;
+    }
+
+
+
+    section{
         padding-top: 0px;
-        padding-bottom: 0px;
+        width: 370px;
+        display: flex;
+        flex-direction: column;
     }
     #image{
-        min-width: 100%;
-        height: 30vh;
-        max-width: 35vw;
+        min-width: 375px;
+        height: 300px;
     }
     .main-image{
         height: 100%;
         width: 100%;
+        border-radius: 0px;
     }
     .sub-image{
         display: none;
     }
     #content{
-        border: 1px solid crimson;
-        margin: auto;
-        align-self: center;
-        display: flex;
-        flex-wrap: wrap;
-        min-width: 300px;
-        padding-top: 0px;
-        padding-left: 10px;
-        padding-bottom: 0px;
-        height: 45vh;
-        max-width: 300px;
-
+        height: fit-content;
+        min-width: 335px;
+        padding: 0px 20px 0px 20px;
+        margin: 0px;
+        font-family: sans-serif;
     }
-    #content h5{
+    h5{
+        align-self: start;
+        justify-self: flex-start;
         margin-top: 0px;
-        text-transform: uppercase;
     }
     #content h1{
-        max-width: 300px;
+        margin-top: -20px;
         font-size: 30px;
     }
     #content p{
-        font-size: 15px;
-        width: 300px;
+        width: 335px;
+        padding-top: 0px;
+        margin-top: -10px;
+        line-height: 30px;
     }
     .discount{
-        flex-direction: row;
-    max-width: 350px;
+        min-width: 335px;
+        padding: 0px;
+    }
+    .fifty{
+        margin-top: 5px;
+        margin-right: 120px;
     }
     .real-price{
-        justify-self: right;
+        align-self: center;
     }
     .clickable{
-        border: 1px solid purple;
-        width: 100%;
-        display: flex;
         flex-direction: column;
     }
     .adding{
-        width: 100%;
+        width: 314px;
+        margin-top: 20px;
+        padding: 10px;
+    }
+    .adding .minus{
+        font-size: 50px;
+        font-weight: 800;
+    }
+    .adding .plus{
+        font-size: 30px;
+        font-weight: 1800;
     }
     #addtocart{
-        padding: 20px;
+        margin-top: 10px;
+        padding: 15px;
+        width: 335px;
     }
-    #addtocart a{
+    button a{
         font-size: 20px;
+    }
+
+    .afteradding1 {
+        height: max-content;
+        padding: 10px;
+        width: max-content;
+        background: hsl(223, 64%, 98%);
+        border-radius: 5px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 1px 10px 20px hsl(220deg 14% 75%);
+        margin-top: -470px;
+        margin-left: 50px;
+        transform: translate(-50%, -55%) scale(1);
+        transition: 1s ease-out;
+        z-index: 3;
     }
   }
